@@ -22,6 +22,12 @@ function countCharac(str){
 countCharac("amine");
 
 function capitalizeWords(str){
+ var myArr = str.split(' ');
+  for(var i in myArr){
+   
+    myArr[i] =  myArr[i][0].charAt(0).toUpperCase() + myArr[i].slice(1);
+  }
+  return myArr.join(' ');
 }
 
 //Array Functions:
